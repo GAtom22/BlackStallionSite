@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 /*
 	Industrious by TEMPLATED
 	templated.co @templatedco
@@ -13,7 +13,10 @@ body {
 
 @media screen and (max-width: 480px) {
   html, body {
-    min-width: 320px; } }
+    min-width: 320px;
+    color: #707070;
+    font-family: 'HelveticaNeue', 'Questrial', Helvetica, sans-serif;
+  } }
 html {
   box-sizing: border-box; }
 
@@ -102,7 +105,7 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #444444; }
+}
 
 body, input, select, textarea {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -135,11 +138,12 @@ header.special {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto; }
-
+h1{
+  font-weight: 700 !important;
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.5;
-  text-transform: uppercase;
   margin: 0 0 1.5rem 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
@@ -225,17 +229,17 @@ a {
   color: #ce1b28; }
 
 strong, b {
-  color: #555555; }
+  color: #707070; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #555555; }
+  color: #707070; }
 
 blockquote {
   border-left-color: rgba(0, 0, 0, 0.25); }
 
-code {
+/* code {
   background: rgba(0, 0, 0, 0.075);
-  border-color: rgba(0, 0, 0, 0.25); }
+  border-color: rgba(0, 0, 0, 0.25); } */
 
 hr {
   border-bottom-color: rgba(0, 0, 0, 0.25); }
@@ -1797,8 +1801,6 @@ ul.icons {
 #banner {
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  background-color: #111111;
-  color: rgba(255, 255, 255, 0.5);
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -1811,10 +1813,10 @@ ul.icons {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/banner.jpg");
+  /* background-image: url("../../images/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   border-top: 0;
   display: -ms-flexbox;
   height: 35rem !important;
@@ -1823,14 +1825,10 @@ ul.icons {
   position: relative;
   text-align: center;
   width: 100%; }
-  #banner input, #banner select, #banner textarea {
-    color: #ffffff; }
   #banner a {
     color: #ce1b28; }
-  #banner strong, #banner b {
-    color: #ffffff; }
-  #banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-    color: #ffffff; }
+
+
   #banner blockquote {
     border-left-color: rgba(255, 255, 255, 0.25); }
   #banner code {
@@ -1938,7 +1936,7 @@ ul.icons {
     #banner table tbody tr:nth-child(2n + 1) {
       background-color: rgba(255, 255, 255, 0.075); }
   #banner table th {
-    color: #ffffff; }
+ }
   #banner table thead {
     border-bottom-color: rgba(255, 255, 255, 0.25); }
   #banner table tfoot {
@@ -1973,10 +1971,9 @@ ul.icons {
   #banner p {
     font-size: 1.5rem; }
   #banner a {
-    color: rgba(255, 255, 255, 0.5);
+
     text-decoration: none; }
-    #banner a:hover {
-      color: #ffffff; }
+    #banner a:hover {}
   #banner video {
     -moz-transform: translateX(50%) translateY(50%);
     -webkit-transform: translateX(50%) translateY(50%);
@@ -1990,7 +1987,7 @@ ul.icons {
     position: absolute;
     right: 50%;
     width: auto; }
-  #banner:before {
+  /* #banner:before {
     -moz-transition: opacity 3s ease;
     -webkit-transition: opacity 3s ease;
     -ms-transition: opacity 3s ease;
@@ -2008,10 +2005,10 @@ ul.icons {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1; }
-  #banner:after {
-    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
-    content: ' ';
+    z-index: 1; } */
+  /* #banner:after { */
+    /* background: linear-gradient(135deg, #ce1b28 0%, #111111 74%); */
+    /* content: ' ';
     display: block;
     height: 100%;
     left: 0;
@@ -2020,7 +2017,7 @@ ul.icons {
     top: 0;
     webkit-linear-gradientidth: 100%;
     width: 100%;
-    z-index: 1; }
+    z-index: 1; } */
   #banner.small {
     height: 30vh !important;
     min-height: 30vh; }
@@ -2427,7 +2424,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10001; }
+  z-index: 10001;
+}
   #header > .logo {
     color: #000;
     font-size: 1rem;
@@ -2499,7 +2497,7 @@ body {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg");
+  /* background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
