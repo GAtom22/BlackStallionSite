@@ -718,7 +718,9 @@ table.alt tbody tr td {
   -moz-align-items: -moz-stretch;
   -webkit-align-items: -webkit-stretch;
   -ms-align-items: -ms-stretch;
-  align-items: stretch; }
+  align-items: stretch;
+  justify-content: center;  
+}
   .highlights > * {
     -moz-flex-shrink: 1;
     -webkit-flex-shrink: 1;
@@ -1829,6 +1831,17 @@ ul.icons {
   padding: 8rem 0 6rem 0 ;
   position: relative;
   z-index: 1; }
+.wrapper .inner{
+  width: 90vw;
+}
+.wrapper section{
+  padding: 0;
+  max-width: 20rem;
+}
+.wrapper .content{
+  padding: 2rem;
+
+}
   @media screen and (max-width: 1280px) {
     .wrapper {
       padding: 4rem 0 2rem 0 ; } }
@@ -1837,7 +1850,7 @@ ul.icons {
       padding: 3rem 0 1rem 0 ; } }
   @media screen and (max-width: 480px) {
     .wrapper {
-      padding: 2rem 0 0.1rem 0 ; } }
+      padding: 3rem 0 0.1rem 0 ; } }
 
 /* Banner */
 #banner {
@@ -2076,6 +2089,12 @@ ul.icons {
       display: none;
     }
 
+    h2{
+      font-size: 1.75rem !important;
+    }
+    .wrapper p{
+      font-size: 1.25rem !important;
+    }
 
     .see-more a:hover{
       text-decoration: none;
@@ -2096,6 +2115,15 @@ ul.icons {
   @media screen and (max-width: 480px) {
     #banner p {
       font-size: 1rem; } }
+      #banner button{
+        padding: 0 3rem;
+      }
+      .wrapper p{
+        font-size: 1rem !important;
+      }
+      .wrapper .content{
+        padding: 0.5rem;
+      }
   body.is-preload #banner .inner {
     -moz-transform: scale(0.99);
     -webkit-transform: scale(0.99);
@@ -2537,8 +2565,8 @@ ul.icons {
           padding-right: 1rem; } }
 
 @media screen and (max-width: 980px) {
-  body {
-    /* padding-top: 44px; } */
+  /* body {
+    padding-top: 44px; } */
 
   #header {
     height: 44px;
@@ -2956,3 +2984,11 @@ body.is-menu-visible #menu {
   opacity: 1;
 }
 
+@media screen and (max-width: 480px) {
+  .navbar{
+    padding: 0 1rem !important;
+  }
+  .navbar-toggler{
+    margin: 0;
+  }
+}
