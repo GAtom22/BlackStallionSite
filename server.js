@@ -7,8 +7,7 @@ const sendMail = require('./services/mail');
 const { log } = console;
 const app = express();
 
-const PORT = 8080;
-
+const PORT = process.env.PORT;
 
 // Data parsing
 app.use(express.urlencoded({
@@ -52,4 +51,4 @@ app.get('/email/sent', (req, res) => {
 
 
 // Start server
-app.listen(PORT, () => log('Server is starting on PORT, ', process.env.PORT));
+app.listen(PORT, () => log('Server is starting on PORT, ', PORT));

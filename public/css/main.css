@@ -1,10 +1,10 @@
 @import url(font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
+html, body {
+  color: #707070 !important;
+  font-family: 'HelveticaNeue', 'Questrial', Helvetica, sans-serif;
+}
 /* Basic */
 @-ms-viewport {
   width: device-width; }
@@ -14,8 +14,6 @@ body {
 @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px;
-    color: #707070;
-    font-family: 'HelveticaNeue', 'Questrial', Helvetica, sans-serif;
   } }
 html {
   box-sizing: border-box; }
@@ -274,7 +272,7 @@ button,
   font-weight: 600;
   height: 3.25rem;
   line-height: 3.25rem;
-  padding: 0 1.75rem;
+  padding: 0 5rem;
   text-align: center;
   text-decoration: none;
   white-space: nowrap; }
@@ -1820,7 +1818,7 @@ ul.icons {
   border-top: 0;
   display: -ms-flexbox;
   height: 35rem !important;
-  min-height: 35rem;
+  min-height: 90vh;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -1842,8 +1840,8 @@ ul.icons {
   #banner button,
   #banner .button {
     background-color: transparent;
-    box-shadow: inset 0 0 0 1px #ffffff;
-    color: #ffffff !important; }
+    box-shadow: inset 0 0 0 1px #707070;
+    color: #707070 !important; }
     #banner input[type="submit"]:hover,
     #banner input[type="reset"]:hover,
     #banner input[type="button"]:hover,
@@ -2385,8 +2383,8 @@ ul.icons {
       padding: 2rem 0 0.1rem 0 ; } }
 
 /* Header */
-body {
-  padding-top: 3.25rem; }
+/* body {
+  padding-top: 3.25rem; } */
   body:before {
     content: ' ';
     background-image: url(../../images/bg.jpg);
@@ -2419,12 +2417,20 @@ body {
   color: rgba(255, 255, 255, 0.5);
   cursor: default;
   height: 3.25rem;
-  left: 0;
   line-height: 3.25rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  margin: auto;
+  margin-top: 1.2rem;
+  width: 90%;
   z-index: 10001;
+}
+#header a{
+  padding: 0 1.25rem;
+  color: #707070;
+}
+
+#header a:hover{
+  opacity: 0.8;
+  text-decoration: none;
 }
   #header > .logo {
     color: #000;
@@ -2471,7 +2477,7 @@ body {
 
 @media screen and (max-width: 980px) {
   body {
-    padding-top: 44px; }
+    /* padding-top: 44px; } */
 
   #header {
     height: 44px;
