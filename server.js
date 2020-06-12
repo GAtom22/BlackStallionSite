@@ -18,18 +18,19 @@ app.use(express.json());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(express.static('public'));
 
+
 // email, subject, text
 app.post('/email', (req, res) => {
-    const { subject, email, text } = req.body;
-    log('Data: ', req.body);
+    const { subject, name, email, text } = req.body;
+    // log('Data: ', req.body);
 
-    sendMail(email, subject, text, function(err, data) {
+    sendMail(email, name, subject, text, function(err, data) {
         if (err) {
             log('ERROR: ', err);
             return res.status(500).json({ message: err.message || 'Internal Error' });
         }
         log('Email sent!!!');
-        return res.json({ message: 'Email sent!!!!!' });
+        return res.json({ message: 'Email sent!' });
     });
 });
 
@@ -40,14 +41,14 @@ app.get('/', (req, res) => {
 });
 
 // Error page
-app.get('/error', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'error.html'));
-});
+// app.get('/error', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'views', 'error.html'));
+// });
 
-// Email sent page
-app.get('/email/sent', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'emailMessage.html'));
-});
+// // Email sent page
+// app.get('/email/sent', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'views', 'emailMessage.html'));
+// });
 
 
 // Start server
