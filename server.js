@@ -40,16 +40,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-// Error page
-// app.get('/error', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'views', 'error.html'));
-// });
-
-// // Email sent page
-// app.get('/email/sent', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'views', 'emailMessage.html'));
-// });
-
 
 // Start server
 app.listen(PORT, () => log('Server is starting on PORT, ', PORT));
