@@ -2930,6 +2930,10 @@ body.is-menu-visible #menu {
   border-radius: 4px;
   border: none;
   box-shadow: none;
+  margin: 0;
+}
+.navbar{
+  padding: 0 1rem !important;
 }
   .navbar-toggler:focus {
       outline: none;
@@ -3167,10 +3171,10 @@ textarea {
 }
 
 /*Product design section*/
-#prod-design{
+.custom-section{
   padding-top: 4rem;
 }
-.product-design-section .inner{
+.custom-section .inner{
   max-width: 100vw;
   width: 100vw;
   display: flex;
@@ -3178,9 +3182,8 @@ textarea {
   text-align: left;
   justify-content: space-between;
   margin: 0;
-
 }
-.product-design-section .inner section{
+.custom-section .inner section{
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -3196,8 +3199,49 @@ header.custom {
   margin: auto;
   max-width: 65%;
 }
+.p-space{
+  margin-bottom: 2rem;
+}
+/*Team section*/
+.h2-special{
+  font-size: 3.2rem !important;
+}
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+  border-color: #707070 !important;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  border-radius: .5rem !important;
+}
+.card span{
+  padding-left: 0.2rem !important;
+}
+.carousel-indicators{
+  margin: 4rem auto !important;
+  width: 100% !important;
+  position: relative !important;
+  justify-content: start !important;
+}
+.carousel-indicators li{
+  border: 2px solid #707070 !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50% !important;
+  padding: 0;
+}
+
 @media screen and (max-width: 768px) {
-  .product-design-section .inner{
+  .custom-section .inner{
     flex-wrap: wrap;
   }
   .product-design-image{
@@ -3206,4 +3250,29 @@ header.custom {
   }
   header.custom {
     text-align: center;}
+}
+
+@media screen and (min-width: 1920px) {
+  header.custom {
+    max-width: 55%;
+  }
+  #work .inner{
+    max-width: 40vw;
+  }
+  #footer .inner{
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 2560px) {
+  header.custom {
+    max-width: 45%;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .custom-section .inner{
+    justify-content: center;
+  }
+  #work .inner{
+    max-width: 30vw;
+  }
 }

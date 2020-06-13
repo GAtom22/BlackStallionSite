@@ -69,4 +69,10 @@
 									.attr("data-target","#navbarSupportedContent");
 	}
 
+	// Team
+	$('.slide-control').on('click', (e) => {
+		let slide = parseInt(e.target.id.split('-')[1])
+    $('#team-imgs').carousel(slide);
+});
+
 })(jQuery);
