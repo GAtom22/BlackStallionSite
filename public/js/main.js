@@ -63,4 +63,10 @@
 		})
 	})		
 
+	// Add data-toggle to hide menu when clicking (mobile)
+	if($window.width() <= 974){
+		$(".nav-item").attr("data-toggle", "collapse")
+									.attr("data-target","#navbarSupportedContent");
+	}
+
 })(jQuery);

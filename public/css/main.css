@@ -3165,3 +3165,45 @@ textarea {
     font-size: 0.875em;
   }
 }
+
+/*Product design section*/
+#prod-design{
+  padding-top: 4rem;
+}
+.product-design-section .inner{
+  max-width: 100vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  margin: 0;
+
+}
+.product-design-section .inner section{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-design-image{
+  max-width: 50vw;
+  width: 50vw;
+  max-height: 100vh;
+}
+header.custom {
+  text-align: left;
+  margin: auto;
+  max-width: 65%;
+}
+@media screen and (max-width: 768px) {
+  .product-design-section .inner{
+    flex-wrap: wrap;
+  }
+  .product-design-image{
+    max-width: 100vw;
+    width: 100vw;
+  }
+  header.custom {
+    text-align: center;}
+}
