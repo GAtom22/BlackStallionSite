@@ -44,7 +44,7 @@ a.button{
 .why-img{
   padding: 2rem !important;
 }
-
+/* END custom Tomas Guerra */
 
 /* Basic */
 @-ms-viewport {
@@ -377,8 +377,8 @@ input[type="button"],
 button,
 .button {
   background-color: transparent;
-  box-shadow: inset 0 0 0 1px #555555;
-  color: #555555 !important; }
+  box-shadow: inset 0 0 0 1px #707070;
+  color: #707070 !important; }
   input[type="submit"]:hover,
   input[type="reset"]:hover,
   input[type="button"]:hover,
@@ -2453,13 +2453,10 @@ ul.icons {
       #footer .content section {
         width: 50%; }
         #footer .content section:first-child {
-          width: 100%;
           padding-right: 0; } }
   @media screen and (max-width: 736px) {
     #footer {
       padding: 3rem 0 1rem 0 ; }
-      #footer .content section {
-        width: 100%; }
         #footer .content section:last-child {
           padding-left: 0; } }
   @media screen and (max-width: 480px) {
@@ -3225,6 +3222,7 @@ header.custom {
 }
 .card span{
   padding-left: 0.2rem !important;
+  text-align: left;
 }
 .carousel-indicators{
   margin: 4rem auto !important;
@@ -3250,6 +3248,29 @@ header.custom {
   }
   header.custom {
     text-align: center;}
+.h2-special{
+      font-size: 1.55rem !important;
+    }
+    h3{
+      font-size: 1.25rem !important;
+    }
+  .skills{
+    justify-content: center;
+  }  
+  .carousel-indicators{
+    margin: 2rem auto !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .carousel-indicators{
+    margin: 1.2rem auto !important;
+  }
+}
+@media screen and (max-width: 320px) {
+.button{
+  padding: 0 !important;
+}
 }
 
 @media screen and (min-width: 1920px) {
