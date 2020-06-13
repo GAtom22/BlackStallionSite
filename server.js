@@ -4,9 +4,10 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const sendMail = require('./services/mail');
+const helmet = require('helmet');
 const { log } = console;
-const app = express();
 
+const app = express();
 const PORT = process.env.PORT;
 
 // Data parsing
@@ -14,6 +15,8 @@ app.use(express.urlencoded({
     extended: false
 }));
 app.use(express.json());
+
+app.disable('x-powered-by');
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(express.static('public'));
